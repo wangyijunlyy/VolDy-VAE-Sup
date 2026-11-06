@@ -1,0 +1,77 @@
+{
+  "backend": "cpu",
+  "torch_version": "2.4.1+cu121",
+  "num_samples": 100,
+  "sampling_seed": 123,
+  "checks": [
+    {
+      "weight_file": "k2vae_electricity_h336.pt",
+      "strict_state_reload": true,
+      "scaler_matches_framework": true,
+      "original_runtime_max_abs_difference": 0.0,
+      "forecast_shape": [
+        1,
+        100,
+        336,
+        321
+      ],
+      "finite": true,
+      "csv_matches_framework": true
+    },
+    {
+      "weight_file": "k2vae_electricity_h720.pt",
+      "strict_state_reload": true,
+      "scaler_matches_framework": true,
+      "original_runtime_max_abs_difference": 0.0,
+      "forecast_shape": [
+        1,
+        100,
+        720,
+        321
+      ],
+      "finite": true,
+      "csv_matches_framework": true
+    },
+    {
+      "weight_file": "k2vae_traffic_h96.pt",
+      "strict_state_reload": true,
+      "scaler_matches_framework": true,
+      "original_runtime_max_abs_difference": 0.0,
+      "forecast_shape": [
+        1,
+        100,
+        96,
+        862
+      ],
+      "finite": true,
+      "csv_matches_framework": true
+    },
+    {
+      "weight_file": "k2vae_traffic_h192.pt",
+      "strict_state_reload": true,
+      "scaler_matches_framework": true,
+      "original_runtime_max_abs_difference": 0.0,
+      "forecast_shape": [
+        1,
+        100,
+        192,
+        862
+      ],
+      "finite": true,
+      "csv_matches_framework": true
+    }
+  ],
+  "command_line_check": {
+    "weight_file": "k2vae_electricity_h720.pt",
+    "input": "standard Electricity benchmark CSV",
+    "device": "cpu",
+    "num_samples": 100,
+    "output_shape": [
+      1,
+      100,
+      720,
+      321
+    ],
+    "passed": true
+  }
+}
