@@ -1,0 +1,8 @@
+{
+  "finished_at": "2026-11-07T14:37:25.718761+00:00",
+  "n_runs": 8,
+  "seed": 1,
+  "reconstruction_weight": 1.0,
+  "kl_weight": 0.0,
+  "all_strict_reloads": true
+}

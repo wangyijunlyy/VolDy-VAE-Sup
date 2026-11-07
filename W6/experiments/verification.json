@@ -1,0 +1,43 @@
+{
+  "n_cases": 48,
+  "summaries": {
+    "kl": 2.761387861838216e-05,
+    "posterior_std": 1.0000183582305908,
+    "reverse_history_rmse": 3.993146176680303e-08,
+    "forecast_temporal_std": 0.012737803471585115,
+    "target_temporal_std": 0.8732720961173376
+  },
+  "latent_mean_variance": 0.0,
+  "activation": {
+    "1": {
+      "zero_fraction": 0.56414794921875
+    },
+    "4": {
+      "zero_fraction": 1.0
+    }
+  },
+  "units": "Training-split standardized coordinates; no hyperparameter selection.",
+  "initial_gradient_probe": {
+    "prediction_mse": {
+      "value": 0.9431840777397156,
+      "encoder_gradient_norm": 0.005001537887156022
+    },
+    "reconstruction_mse": {
+      "value": 0.6983827352523804,
+      "encoder_gradient_norm": 0.020712588546146354
+    },
+    "weighted_kl": {
+      "value": 0.011054500006139278,
+      "encoder_gradient_norm": 0.2528461866116445
+    }
+  },
+  "initial_gradient_probe_scope": "One fixed four-example training batch.",
+  "release_checks": {
+    "source_files_bytewise_match": true,
+    "all_ten_configs_resolve": true,
+    "training_entry_imports": true,
+    "checkpoint_export_strict_reload": true,
+    "full_heldout_diagnostics_match_original": true,
+    "new_training_started": false
+  }
+}

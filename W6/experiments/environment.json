@@ -1,0 +1,15 @@
+{
+  "python": "3.10.19",
+  "packages": {
+    "torch": "2.4.1+cu121",
+    "lightning": "2.5.0.post0",
+    "jsonargparse": "4.27.7",
+    "gluonts": "0.16.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "einops": "0.8.1",
+    "scikit-learn": "1.7.2",
+    "PyYAML": "6.0.3",
+    "tensorboard": "2.15.2"
+  }
+}

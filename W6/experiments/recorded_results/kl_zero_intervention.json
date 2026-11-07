@@ -1,0 +1,17 @@
+{
+  "state": "done",
+  "seed": 1,
+  "reconstruction_weight": 0.2,
+  "kl_weight": 0.0,
+  "hypothesis": "KL pressure contributes to encoder/posterior collapse",
+  "scope": "diagnostic only; not a replacement Vanilla VAE benchmark",
+  "started_at": "2026-11-07T13:37:50.656526+00:00",
+  "best_epoch": 16,
+  "last_epoch": 26,
+  "best_validation_CRPS": 0.09792789816856384,
+  "test_CRPS": 0.11220524931151066,
+  "test_ND": 0.1128967440168102,
+  "initial_parameters_identical": true,
+  "strict_weight_reload": true,
+  "finished_at": "2026-11-07T13:59:59.777517+00:00"
+}

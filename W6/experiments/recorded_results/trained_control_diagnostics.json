@@ -1,0 +1,125 @@
+{
+  "scope": "Read-only diagnostics on all48 unique held-out windows; no hyperparameter selection.",
+  "normalized_distance_units": "training-split standard-scaled coordinates",
+  "deterministic": "decode posterior mean",
+  "summaries": {
+    "rec02": {
+      "CRPS": 0.3636022711891647,
+      "ND": 0.364975746380316,
+      "deterministic_ND": 0.3645077913324599,
+      "history_mean_ND": 0.36703456862023504,
+      "last_value_ND": 0.4540726493456109,
+      "seasonal24_ND": 0.12674822588038556,
+      "kl": 2.761387861838216e-05,
+      "posterior_mu_rms": 0.0005845890264026821,
+      "posterior_logvar_abs": 0.00032501143869012594,
+      "posterior_std": 1.0000183582305908,
+      "forecast_vs_history_mean_rmse": 0.03230256113844613,
+      "deterministic_vs_history_mean_rmse": 0.034936717905414603,
+      "remove_latent_rmse": 0.00010004033432172339,
+      "reverse_history_rmse": 3.993146176680303e-08,
+      "forecast_temporal_std": 0.012737803471585115,
+      "target_temporal_std": 0.8732720961173376,
+      "forecast_sample_std": 0.004842652308677013,
+      "n_cases": 48,
+      "latent_mean_variance": 0.0,
+      "max_latent_mean_variance": 0.0
+    },
+    "rec10": {
+      "CRPS": 0.3635436980180035,
+      "ND": 0.3649488011240231,
+      "deterministic_ND": 0.3648486584777233,
+      "history_mean_ND": 0.36703456862023504,
+      "last_value_ND": 0.4540726493456109,
+      "seasonal24_ND": 0.12674822588038556,
+      "kl": 7.592224634128675e-05,
+      "posterior_mu_rms": 0.0009343271376565099,
+      "posterior_logvar_abs": 0.0006083901971578598,
+      "posterior_std": 0.9999748468399048,
+      "forecast_vs_history_mean_rmse": 0.02117674545540164,
+      "deterministic_vs_history_mean_rmse": 0.022207397463110585,
+      "remove_latent_rmse": 9.319601652653849e-05,
+      "reverse_history_rmse": 3.9685167559551836e-08,
+      "forecast_temporal_std": 0.012768805550877005,
+      "target_temporal_std": 0.8732720961173376,
+      "forecast_sample_std": 0.0065235770113455755,
+      "n_cases": 48,
+      "latent_mean_variance": 0.0,
+      "max_latent_mean_variance": 0.0
+    }
+  },
+  "gradient_probe": {
+    "initial": {
+      "prediction_mse": {
+        "value": 0.9431840777397156,
+        "encoder_gradient_norm": 0.005001537887156022,
+        "future_proj_gradient_norm": 0.005763762192604431,
+        "decoder_mu_gradient_norm": 0.02611220509751697,
+        "revin_gradient_norm": 0.014638537196469605
+      },
+      "reconstruction_mse": {
+        "value": 0.6983827352523804,
+        "encoder_gradient_norm": 0.020712588546146354,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.045735321858177885,
+        "revin_gradient_norm": 0.0021139005448673792
+      },
+      "weighted_kl": {
+        "value": 0.011054500006139278,
+        "encoder_gradient_norm": 0.2528461866116445,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.0,
+        "revin_gradient_norm": 0.002843699653263183
+      }
+    },
+    "rec02": {
+      "prediction_mse": {
+        "value": 0.9320335984230042,
+        "encoder_gradient_norm": 0.0012334575174807111,
+        "future_proj_gradient_norm": 0.004029746351098034,
+        "decoder_mu_gradient_norm": 0.0157383419700413,
+        "revin_gradient_norm": 0.015248240154386125
+      },
+      "reconstruction_mse": {
+        "value": 0.6790870428085327,
+        "encoder_gradient_norm": 0.0001448051923029782,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.01322240509688702,
+        "revin_gradient_norm": 0.002386782299024504
+      },
+      "weighted_kl": {
+        "value": 2.843141544417449e-07,
+        "encoder_gradient_norm": 7.034556589951864e-05,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.0,
+        "revin_gradient_norm": 0.0
+      }
+    },
+    "rec10": {
+      "prediction_mse": {
+        "value": 0.9308018684387207,
+        "encoder_gradient_norm": 0.0005654316278417421,
+        "future_proj_gradient_norm": 0.003517061077153391,
+        "decoder_mu_gradient_norm": 0.014229912398931694,
+        "revin_gradient_norm": 0.01478138643360629
+      },
+      "reconstruction_mse": {
+        "value": 0.6786903142929077,
+        "encoder_gradient_norm": 0.0,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.012818508514200924,
+        "revin_gradient_norm": 0.0013299505245953317
+      },
+      "weighted_kl": {
+        "value": 7.712840783824504e-07,
+        "encoder_gradient_norm": 0.00011480129638389582,
+        "future_proj_gradient_norm": 0.0,
+        "decoder_mu_gradient_norm": 0.0,
+        "revin_gradient_norm": 0.0
+      }
+    }
+  },
+  "gradient_probe_batch_size": 4,
+  "gradient_probe_training_seed": 1,
+  "excluded_from_trained_model_analysis": "logger_initial_snapshot is a test-logger initialization snapshot, not a trained checkpoint"
+}
