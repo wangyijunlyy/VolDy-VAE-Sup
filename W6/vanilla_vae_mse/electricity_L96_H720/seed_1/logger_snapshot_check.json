@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/home/wyj/K2VAE/log_dir/vanilla_mse_reconstruction_weight_seed1_electricity720_20261107/runs/rec02/electricity_ltsf_MSEWeightForecaster_CTX96_PRED720_seed1_log_20261107_190615_1794049575560/ckpt/epoch=9-val_CRPS=0.321209.ckpt",
+  "live_model_matches_checkpoint": true,
+  "logger_snapshot_matches_checkpoint": false,
+  "n_tensors": 16,
+  "n_logger_snapshot_tensors_different": 16,
+  "logger_snapshot_max_difference": 0.3775038719177246,
+  "explanation": "Lightning test logging uses hparams_initial, copied before load_state_dict. Its serialized forecaster is not the trained state_dict."
+}
