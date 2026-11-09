@@ -13,7 +13,7 @@ The following metrics are the recorded test results for the corresponding checkp
 | Traffic | 96 | 96 | 2 | 0.185506 | 0.231092 | [k2vae_traffic_h96.pt](k2vae_traffic_h96.pt) |
 | Traffic | 96 | 192 | 2 | 0.191213 | 0.238244 | [k2vae_traffic_h192.pt](k2vae_traffic_h192.pt) |
 
-[metadata.json](metadata.json) contains all four recorded metrics, checkpoint epochs, feature order, and batch sizes. [results_per_seed.csv](results_per_seed.csv) contains the complete 20-run reproduction with seeds 0–4; [results_mean_std.csv](results_mean_std.csv) reports the mean and sample standard deviation across those five seeds. The checkpoint table above reports individual runs; the CSV summary reports five-seed statistics.
+[metadata.json](metadata.json) contains all four recorded metrics, checkpoint epochs, feature order, and batch sizes. The checkpoint table above reports individual runs.
 
 Training used standard scaling fitted on the training split, a separate validation split, a maximum of 20 epochs and 100 training batches per epoch, and validation-CRPS early stopping with patience 5. The weights are from the best validation-CRPS epoch of their respective run. The bundles contain model tensors and preprocessing statistics, without optimizer states, and load with `torch.load(..., weights_only=True)`.
 
